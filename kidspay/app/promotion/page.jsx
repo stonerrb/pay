@@ -13,7 +13,7 @@ function Page() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/get-promotion").then((response) => {
+    axios.get("https://pay-6-la3k.onrender.com/get-promotion").then((response) => {
       setData(response.data);
     });
   }, []);
