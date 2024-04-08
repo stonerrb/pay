@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
 
-mongoose.connect(process.env.MONGODB_URL, {});
+mongoose.connect('mongodb+srv://babrerushabh1:deOepbf3Bkw8yNvC@kidzpay.mpx6qmd.mongodb.net/?retryWrites=true&w=majority&appName=KidzPay', {});
 
 const db = mongoose.connection;
 
